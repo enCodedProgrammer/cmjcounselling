@@ -13,6 +13,8 @@ document.getElementById("wf-form-counselling").addEventListener("submit", async 
 
         if (response.ok) {
             alert("Form submitted successfully!");
+            document.getElementById("wf-form-counselling").style.display = "none" 
+            document.getElementById("success").style.display = "block"
         } else {
             alert("There was an error submitting the form.");
         }
